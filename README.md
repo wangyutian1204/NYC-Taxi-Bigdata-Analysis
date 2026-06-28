@@ -10,19 +10,19 @@ Python 生态：Pandas、NumPy 用于海量数据清洗与特征计算；Matplot
 开发工具：Jupyter Notebook、Git 版本管理
 
 ## 项目目录结构
-NYC-Taxi-Bigdata-Analysis/
-├── charts/ # 所有可视化结果截图
-├── data/ # 数据集字段说明文档
-│ └── dataset_desc.md
-├── docs/
-│ └── analysis_report.md # 完整业务分析报告
-├── .gitignore # 仓库过滤配置
-├── data_encoded.csv # 清洗编码后标准建模数据集
-├── nyc_taxi_sql_analysis.sql # MySQL 统计脚本
-├── NYC_Taxi_Trip_Duration_Analysis.ipynb # 核心分析代码
-├── README.md
-└── requirements.txt # 项目依赖
 
+- charts/：存储全部可视化产出图表
+- data/
+  - dataset_desc.md：数据集来源、字段完整说明文档
+- docs/
+  - analysis_report.md：完整图文业务分析报告
+- .gitignore：仓库冗余文件过滤配置
+- data_encoded.csv：清洗编码后可直接建模的标准数据集
+- nyc_taxi_sql_analysis.sql：多维度运营指标统计SQL脚本
+- NYC_Taxi_Trip_Duration_Analysis.ipynb：项目全套核心分析代码
+- README.md：项目总说明文档
+- requirements.txt：项目Python环境依赖清单
+  
 ## 项目流程
 1. 数据预处理：百万级数据集采样优化、缺失/重复/地理异常数据清洗
 2. 特征工程：时间特征（小时/工作日/月份）、经纬度距离空间特征构建
